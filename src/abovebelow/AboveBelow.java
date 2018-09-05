@@ -13,8 +13,8 @@ public class AboveBelow {
 		int size = arraySize(); // call method to get size
 		int[] array = new int[size]; // initialize array to size
 		randomOrSpecific(size, array); // method call to determine array values
-		int testInt = getNumber(); // method call to get user's test int
-		printNumbers(array, testInt); // method call to print count of values above/below test int
+		//int testInt = getNumber(); // method call to get user's test int
+		printNumbers(array, getNumber()); // method call to print count of values above/below test int
 	} // end main
 	
 	// method to get array size
@@ -62,6 +62,7 @@ public class AboveBelow {
 			int randomInt = random.nextInt(99) + 1; // arbitrary value to keep this more readable
 			array[i] = randomInt; // add integer to array
 		}
+		input.nextLine();
 		return array;
 	}
 	
